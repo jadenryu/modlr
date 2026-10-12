@@ -1,0 +1,626 @@
+{
+  "upgrades": [
+    {
+      "package": "lucide-react",
+      "fromVersion": "0.526.0",
+      "toVersion": "1.41.0",
+      "declaredIn": [
+        {
+          "path": "package.json",
+          "range": "^0.526.0"
+        }
+      ],
+      "majorsBehind": 1,
+      "advisories": 0,
+      "deprecated": false,
+      "verdict": "removes-exports",
+      "removed": [
+        "LucideLinkedin",
+        "Chrome",
+        "ChromeIcon",
+        "Codepen",
+        "CodepenIcon",
+        "Codesandbox",
+        "CodesandboxIcon",
+        "Dribbble",
+        "DribbbleIcon",
+        "Facebook",
+        "FacebookIcon",
+        "Figma",
+        "FigmaIcon",
+        "Framer",
+        "FramerIcon",
+        "Github",
+        "GithubIcon",
+        "Gitlab",
+        "GitlabIcon",
+        "Instagram",
+        "InstagramIcon",
+        "Linkedin",
+        "LinkedinIcon",
+        "LucideChrome",
+        "LucideCodepen",
+        "LucideCodesandbox",
+        "LucideDribbble",
+        "LucideFacebook",
+        "LucideFigma",
+        "LucideFramer",
+        "LucideGithub",
+        "LucideGitlab",
+        "LucideInstagram",
+        "LucidePocket",
+        "LucideRailSymbol",
+        "LucideSlack",
+        "LucideTrello",
+        "LucideTwitch",
+        "LucideTwitter",
+        "LucideYoutube",
+        "Pocket",
+        "PocketIcon",
+        "RailSymbol",
+        "RailSymbolIcon",
+        "Slack",
+        "SlackIcon",
+        "Trello",
+        "TrelloIcon",
+        "Twitch",
+        "TwitchIcon",
+        "Twitter",
+        "TwitterIcon",
+        "Youtube",
+        "YoutubeIcon"
+      ],
+      "renamed": [],
+      "arityChanged": [],
+      "typeOnlyRemoved": [],
+      "newlyDeprecated": [],
+      "hops": [],
+      "inScope": true
+    },
+    {
+      "package": "zod",
+      "fromVersion": "3.25.76",
+      "toVersion": "4.6.5",
+      "declaredIn": [
+        {
+          "path": "package.json",
+          "range": "^3.25.76"
+        }
+      ],
+      "majorsBehind": 1,
+      "advisories": 0,
+      "deprecated": false,
+      "verdict": "removes-exports",
+      "removed": [
+        "BRAND",
+        "DIRTY",
+        "EMPTY_PATH",
+        "OK",
+        "ParseStatus",
+        "Schema",
+        "ZodBranded",
+        "ZodEffects",
+        "ZodNativeEnum",
+        "ZodParsedType",
+        "ZodPipeline",
+        "ZodSchema",
+        "ZodTransformer",
+        "addIssueToContext",
+        "datetimeRegex",
+        "defaultErrorMap",
+        "effect",
+        "getParsedType",
+        "isAborted",
+        "isAsync",
+        "isDirty",
+        "isValid",
+        "late",
+        "makeIssue",
+        "oboolean",
+        "onumber",
+        "ostring",
+        "pipeline",
+        "quotelessJson",
+        "transformer"
+      ],
+      "renamed": [
+        {
+          "path": "Schema",
+          "to": [
+            "ZodType"
+          ]
+        },
+        {
+          "path": "ZodSchema",
+          "to": [
+            "ZodType"
+          ]
+        }
+      ],
+      "arityChanged": [
+        {
+          "path": "custom",
+          "from": 1,
+          "to": 2,
+          "fromMax": 3,
+          "toMax": 2
+        }
+      ],
+      "typeOnlyRemoved": [],
+      "newlyDeprecated": [
+        "ZodCUID",
+        "ZodIssueCode"
+      ],
+      "hops": [],
+      "inScope": true
+    },
+    {
+      "package": "ai",
+      "fromVersion": "5.0.252",
+      "toVersion": "7.0.92",
+      "declaredIn": [
+        {
+          "path": "package.json",
+          "range": "^5.0.108"
+        }
+      ],
+      "majorsBehind": 2,
+      "advisories": 0,
+      "deprecated": false,
+      "verdict": "removes-exports",
+      "removed": [
+        "NoOutputSpecifiedError",
+        "convertToCoreMessages",
+        "coreAssistantMessageSchema",
+        "coreMessageSchema",
+        "coreSystemMessageSchema",
+        "coreToolMessageSchema",
+        "coreUserMessageSchema",
+        "default",
+        "experimental_customProvider",
+        "experimental_generateImage",
+        "isToolOrDynamicToolUIPart"
+      ],
+      "renamed": [],
+      "arityChanged": [
+        {
+          "path": "hasToolCall",
+          "from": 1,
+          "to": 0,
+          "fromMax": 1,
+          "toMax": null
+        },
+        {
+          "path": "object",
+          "from": 1,
+          "to": 0,
+          "fromMax": 1,
+          "toMax": 1
+        }
+      ],
+      "typeOnlyRemoved": [],
+      "newlyDeprecated": [],
+      "hops": [
+        {
+          "fromVersion": "5.0.252",
+          "toVersion": "6.0.276",
+          "verdict": "removes-exports",
+          "removed": [
+            "NoOutputSpecifiedError",
+            "convertToCoreMessages",
+            "coreAssistantMessageSchema",
+            "coreMessageSchema",
+            "coreSystemMessageSchema",
+            "coreToolMessageSchema",
+            "coreUserMessageSchema"
+          ],
+          "arityChanged": []
+        },
+        {
+          "fromVersion": "6.0.276",
+          "toVersion": "7.0.92",
+          "verdict": "removes-exports",
+          "removed": [
+            "bindTelemetryIntegration",
+            "default",
+            "experimental_customProvider",
+            "experimental_generateImage",
+            "isToolOrDynamicToolUIPart",
+            "registerTelemetryIntegration"
+          ],
+          "arityChanged": [
+            {
+              "path": "array",
+              "from": 1,
+              "to": 0,
+              "fromMax": 1,
+              "toMax": 1
+            },
+            {
+              "path": "choice",
+              "from": 1,
+              "to": 0,
+              "fromMax": 1,
+              "toMax": 1
+            },
+            {
+              "path": "hasToolCall",
+              "from": 1,
+              "to": 0,
+              "fromMax": 1,
+              "toMax": null
+            },
+            {
+              "path": "object",
+              "from": 1,
+              "to": 0,
+              "fromMax": 1,
+              "toMax": 1
+            }
+          ]
+        }
+      ],
+      "inScope": true
+    },
+    {
+      "package": "@ai-sdk/xai",
+      "fromVersion": "1.2.18",
+      "toVersion": "4.0.57",
+      "declaredIn": [
+        {
+          "path": "package.json",
+          "range": "^1.0.5"
+        }
+      ],
+      "majorsBehind": 3,
+      "advisories": 0,
+      "deprecated": false,
+      "verdict": "removes-exports",
+      "removed": [
+        "default"
+      ],
+      "renamed": [],
+      "arityChanged": [],
+      "typeOnlyRemoved": [],
+      "newlyDeprecated": [],
+      "hops": [
+        {
+          "fromVersion": "1.2.18",
+          "toVersion": "2.0.93",
+          "verdict": "clean",
+          "removed": [],
+          "arityChanged": []
+        },
+        {
+          "fromVersion": "2.0.93",
+          "toVersion": "3.0.131",
+          "verdict": "clean",
+          "removed": [],
+          "arityChanged": []
+        },
+        {
+          "fromVersion": "3.0.131",
+          "toVersion": "4.0.57",
+          "verdict": "removes-exports",
+          "removed": [
+            "default"
+          ],
+          "arityChanged": []
+        }
+      ],
+      "inScope": true
+    },
+    {
+      "package": "three-bvh-csg",
+      "fromVersion": "0.0.17",
+      "toVersion": "0.0.18",
+      "declaredIn": [
+        {
+          "path": "package.json",
+          "range": "^0.0.17"
+        }
+      ],
+      "majorsBehind": 0,
+      "advisories": 0,
+      "deprecated": false,
+      "verdict": "removes-exports",
+      "removed": [
+        "TriangleSplitter"
+      ],
+      "renamed": [],
+      "arityChanged": [],
+      "typeOnlyRemoved": [],
+      "newlyDeprecated": [],
+      "hops": [],
+      "inScope": true
+    },
+    {
+      "package": "react",
+      "fromVersion": "19.1.0",
+      "toVersion": "19.3.0",
+      "declaredIn": [
+        {
+          "path": "package.json",
+          "range": "19.1.0"
+        }
+      ],
+      "majorsBehind": 0,
+      "advisories": 0,
+      "deprecated": false,
+      "verdict": "arity-changed",
+      "removed": [],
+      "renamed": [],
+      "arityChanged": [
+        {
+          "path": "useEffect",
+          "from": 3,
+          "to": 2,
+          "fromMax": 3,
+          "toMax": 2
+        }
+      ],
+      "typeOnlyRemoved": [],
+      "newlyDeprecated": [],
+      "hops": [],
+      "inScope": true
+    },
+    {
+      "package": "@types/node",
+      "fromVersion": "20.19.43",
+      "toVersion": "22.20.3",
+      "declaredIn": [
+        {
+          "path": "package.json",
+          "range": "^20"
+        }
+      ],
+      "majorsBehind": 2,
+      "advisories": 0,
+      "deprecated": false,
+      "verdict": "unknown",
+      "removed": [],
+      "renamed": [],
+      "arityChanged": [],
+      "typeOnlyRemoved": [],
+      "newlyDeprecated": [],
+      "hops": [
+        {
+          "fromVersion": "20.19.43",
+          "toVersion": "22.20.3",
+          "verdict": "unknown",
+          "removed": [],
+          "arityChanged": []
+        }
+      ],
+      "inconclusive": "no extracted surface for 20.19.43, 22.20.3, queued; retry shortly. NOT evidence that symbols were removed.",
+      "inScope": true
+    },
+    {
+      "package": "typescript",
+      "fromVersion": "5.9.3",
+      "toVersion": "7.0.2",
+      "declaredIn": [
+        {
+          "path": "package.json",
+          "range": "^5"
+        }
+      ],
+      "majorsBehind": 2,
+      "advisories": 0,
+      "deprecated": false,
+      "verdict": "unknown",
+      "removed": [],
+      "renamed": [],
+      "arityChanged": [],
+      "typeOnlyRemoved": [],
+      "newlyDeprecated": [],
+      "hops": [
+        {
+          "fromVersion": "5.9.3",
+          "toVersion": "6.0.3",
+          "verdict": "unknown",
+          "removed": [],
+          "arityChanged": []
+        },
+        {
+          "fromVersion": "6.0.3",
+          "toVersion": "7.0.2",
+          "verdict": "unknown",
+          "removed": [],
+          "arityChanged": []
+        }
+      ],
+      "inconclusive": "no extracted surface for 5.9.3, queued; retry shortly. NOT evidence that symbols were removed.",
+      "inScope": true
+    },
+    {
+      "package": "@types/three",
+      "fromVersion": "0.181.0",
+      "toVersion": "0.186.0",
+      "declaredIn": [
+        {
+          "path": "package.json",
+          "range": "^0.181.0"
+        }
+      ],
+      "majorsBehind": 0,
+      "advisories": 0,
+      "deprecated": false,
+      "verdict": "unknown",
+      "removed": [],
+      "renamed": [],
+      "arityChanged": [],
+      "typeOnlyRemoved": [],
+      "newlyDeprecated": [],
+      "hops": [],
+      "inconclusive": "no extracted surface for 0.181.0, 0.186.0, queued; retry shortly. NOT evidence that symbols were removed.",
+      "inScope": true
+    },
+    {
+      "package": "next",
+      "fromVersion": "15.5.25",
+      "toVersion": "16.3.5",
+      "declaredIn": [
+        {
+          "path": "package.json",
+          "range": "^15.5.7"
+        }
+      ],
+      "majorsBehind": 1,
+      "advisories": 2,
+      "deprecated": false,
+      "verdict": "clean",
+      "removed": [],
+      "renamed": [],
+      "arityChanged": [],
+      "typeOnlyRemoved": [],
+      "newlyDeprecated": [],
+      "hops": [],
+      "inScope": true
+    },
+    {
+      "package": "@jgphilpott/polyslice",
+      "fromVersion": "25.12.9",
+      "toVersion": "26.7.0",
+      "declaredIn": [
+        {
+          "path": "package.json",
+          "range": "^25.11.1"
+        }
+      ],
+      "majorsBehind": 1,
+      "advisories": 0,
+      "deprecated": false,
+      "verdict": "clean",
+      "removed": [],
+      "renamed": [],
+      "arityChanged": [],
+      "typeOnlyRemoved": [],
+      "newlyDeprecated": [],
+      "hops": [],
+      "inScope": true
+    },
+    {
+      "package": "framer-motion",
+      "fromVersion": "12.43.0",
+      "toVersion": "13.4.0",
+      "declaredIn": [
+        {
+          "path": "package.json",
+          "range": "^12.23.12"
+        }
+      ],
+      "majorsBehind": 1,
+      "advisories": 0,
+      "deprecated": false,
+      "verdict": "clean",
+      "removed": [],
+      "renamed": [],
+      "arityChanged": [],
+      "typeOnlyRemoved": [],
+      "newlyDeprecated": [],
+      "hops": [],
+      "inScope": true
+    },
+    {
+      "package": "@paper-design/shaders-react",
+      "fromVersion": "0.0.47",
+      "toVersion": "0.0.81",
+      "declaredIn": [
+        {
+          "path": "package.json",
+          "range": "^0.0.47"
+        }
+      ],
+      "majorsBehind": 0,
+      "advisories": 0,
+      "deprecated": false,
+      "verdict": "clean",
+      "removed": [],
+      "renamed": [],
+      "arityChanged": [],
+      "typeOnlyRemoved": [],
+      "newlyDeprecated": [],
+      "hops": [],
+      "inScope": true
+    },
+    {
+      "package": "@supabase/ssr",
+      "fromVersion": "0.6.1",
+      "toVersion": "0.12.7",
+      "declaredIn": [
+        {
+          "path": "package.json",
+          "range": "^0.6.1"
+        }
+      ],
+      "majorsBehind": 0,
+      "advisories": 0,
+      "deprecated": false,
+      "verdict": "clean",
+      "removed": [],
+      "renamed": [],
+      "arityChanged": [],
+      "typeOnlyRemoved": [],
+      "newlyDeprecated": [],
+      "hops": [],
+      "inScope": true
+    },
+    {
+      "package": "react-dom",
+      "fromVersion": "19.1.0",
+      "toVersion": "19.3.0",
+      "declaredIn": [
+        {
+          "path": "package.json",
+          "range": "19.1.0"
+        }
+      ],
+      "majorsBehind": 0,
+      "advisories": 0,
+      "deprecated": false,
+      "verdict": "clean",
+      "removed": [],
+      "renamed": [],
+      "arityChanged": [],
+      "typeOnlyRemoved": [],
+      "newlyDeprecated": [],
+      "hops": [],
+      "inScope": true
+    },
+    {
+      "package": "three",
+      "fromVersion": "0.181.2",
+      "toVersion": "0.186.0",
+      "declaredIn": [
+        {
+          "path": "package.json",
+          "range": "^0.181.2"
+        }
+      ],
+      "majorsBehind": 0,
+      "advisories": 0,
+      "deprecated": false,
+      "verdict": "clean",
+      "removed": [],
+      "renamed": [],
+      "arityChanged": [],
+      "typeOnlyRemoved": [],
+      "newlyDeprecated": [
+        "Clock",
+        "Source"
+      ],
+      "hops": [],
+      "inScope": true
+    }
+  ],
+  "omitted": 0,
+  "pending": 3,
+  "scope": "all",
+  "scopeSource": "repo-policy",
+  "outOfScope": 0,
+  "mode": "pr",
+  "untracked": 0,
+  "manifests": 2,
+  "deps": 55
+}
