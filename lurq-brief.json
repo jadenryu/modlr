@@ -1,0 +1,89 @@
+{
+  "safe": false,
+  "breaking": [],
+  "ok": [
+    "lucide-react",
+    "zod",
+    "ai",
+    "@ai-sdk/xai",
+    "three-bvh-csg",
+    "react",
+    "@types/node",
+    "typescript",
+    "@types/three",
+    "@jgphilpott/polyslice",
+    "framer-motion",
+    "@paper-design/shaders-react",
+    "@supabase/ssr",
+    "react-dom",
+    "three"
+  ],
+  "unverified": [
+    {
+      "package": "next",
+      "reason": "next/font/google: no readable surface (entry resolved but no exports found)"
+    }
+  ],
+  "types": [
+    {
+      "package": "lucide-react",
+      "checked": true,
+      "files": 42
+    },
+    {
+      "package": "zod",
+      "checked": true,
+      "files": 3
+    },
+    {
+      "package": "ai",
+      "checked": true,
+      "files": 1
+    },
+    {
+      "package": "@ai-sdk/xai",
+      "checked": false,
+      "reason": "the new version's types import zod/v4, which is not installed here"
+    },
+    {
+      "package": "three-bvh-csg",
+      "checked": true,
+      "files": 14
+    },
+    {
+      "package": "react",
+      "checked": false,
+      "reason": "the new version ships no type definitions of its own"
+    },
+    {
+      "package": "next",
+      "checked": false,
+      "reason": "the new version's types import node:stream, react-dom/static, which is not installed here"
+    },
+    {
+      "package": "@jgphilpott/polyslice",
+      "checked": false,
+      "reason": "no tsconfig.json includes the files that import it"
+    },
+    {
+      "package": "framer-motion",
+      "checked": true,
+      "files": 13
+    },
+    {
+      "package": "@paper-design/shaders-react",
+      "checked": false,
+      "reason": "the new version's types import react, which is not installed here"
+    },
+    {
+      "package": "@supabase/ssr",
+      "checked": true,
+      "files": 6
+    },
+    {
+      "package": "three",
+      "checked": false,
+      "reason": "the new version ships no type definitions of its own"
+    }
+  ]
+}
